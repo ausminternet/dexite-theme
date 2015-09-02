@@ -1,0 +1,21 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "authors": [
+    "Jan Hofmann <jan.hofmann@dexite.de>"
+  ],
+  "description": "start a simple web-page with sass, fontawesome and normalize.css",
+  "license": "CC BY-NC-SA 3.0 DE",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "fontawesome": "*",
+    "normalize.css": "*"
+  }
+}

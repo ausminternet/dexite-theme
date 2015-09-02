@@ -1,0 +1,8 @@
+.sass-cache
+node_modules
+bower_components
+assets/css
+assets/js/vendors*
+assets/js/*.min.js
+assets/fonts/Fontawesome*
+assets/fonts/fontawesome*
