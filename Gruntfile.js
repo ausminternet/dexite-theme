@@ -7,14 +7,10 @@ module.exports = function(grunt) {
     //=== include all bowerlibs
     bower_concat: {
       js: {
-        dest: 'assets/js/vendors.js',
-        exclude: 'fontawesome',
+        dest: 'assets/js/vendors.js'
       },
       css: {
-        cssDest: 'assets/css/vendors.css',
-        mainFiles: {
-          'fontawesome': 'css/font-awesome.css'
-        }
+        dest: 'assets/css/vendors.css'
       }
     },
 
@@ -105,19 +101,7 @@ module.exports = function(grunt) {
                 'index.html'],
         options: { livereload: true }
       }
-    },
-
-    copy: {
-      fontawesome: {
-        files: [{
-          expand: true,
-          flatten: true,
-          src: ['bower_components/fontawesome/fonts/**/*'],
-          dest: 'assets/fonts/'
-          },
-        ],
-      },
-    },
+    }
   });
 
   //=== require all tasks
@@ -128,8 +112,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build-bower', [
     'bower_concat:js',
     'bower_concat:css',
-    'autoprefixer:bower',
-    'copy:fontawesome',
+    'autoprefixer:bower'
   ]);
 
   // build app css
@@ -145,7 +128,7 @@ module.exports = function(grunt) {
   ]);
 
   // watch
-  grunt.registerTask('build', [
+  grunt.registerTask('default', [
     'build',
     'watch'
   ]);
