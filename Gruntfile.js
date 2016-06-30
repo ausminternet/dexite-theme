@@ -88,7 +88,7 @@ module.exports = function(grunt) {
     // grunt-watch will monitor the projects files
     watch: {
       scss: {
-        files: 'assets/scss/*.scss',
+        files: 'assets/scss/**/*.scss',
         tasks: 'build-sass',
       },
       js: {

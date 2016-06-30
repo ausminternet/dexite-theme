@@ -1,19 +1,4 @@
 {
-  "name": "quickstart",
-  "version": "1.0.0",
-  "description": "start a simple web-page with sass, fontawesome and normalize.css",
-  "author": "Jan Hofmann <jan.hofmann@dexite.de>",
-  "license": "CC BY-NC-SA 3.0 DE",
-  "devDependencies": {
-    "grunt": "*",
-    "grunt-autoprefixer": "*",
-    "grunt-bower-concat": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-sass": "*",
-    "load-grunt-tasks": "*"
-  }
+  "name": "dexite",
+  "version": "1.0"
 }
