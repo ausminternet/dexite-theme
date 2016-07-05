@@ -1,0 +1,41 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+<header class="site-header">
+
+  <div class="avatar">
+    <div class="avatar__image"></div>
+    <div class="avatar__popout avatar__popout--greeting">
+      Hallo, ich bin Jan.
+    </div>
+  </div>
+
+</header>
+
+{{!-- Previous/next page links - only displayed on page 2+ --}}
+<!-- <div class="extra-pagination inner">
+    {{pagination}}
+</div> -->
+
+{{!-- This is the post loop - each post will be output using this markup --}}
+{{#foreach posts}}
+<article class="article-list__article article-list__article--{{post_class}}">
+  <a href="{{url}}" class="article-list__link">
+    <header class="article-list__header">
+      <time
+        class="article-list__time"
+        pubdate datetime="{{date format="YYYY-MM-DD HH:MM::SS"}}"
+        title="{{date format="DD MMMM YYYY"}}"
+      >
+        {{date format="DD.MM.YY"}}
+      </time>
+      <h1 class="article-list__title">
+        {{title}}
+      </h1>
+    </header>
+  </a>
+</article>
+{{/foreach}}
+
+{{!-- Previous/next page links - displayed on every page --}}
+<!-- {{pagination}} -->

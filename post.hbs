@@ -1,0 +1,50 @@
+{{!< default}}
+
+{{#post}}
+<header class="site-header site-header--small">
+  <div class="avatar avatar--small">
+    <a href="{{@blog.url}}" class="avatar__link"></a>
+    <div class="avatar__image"></div>
+    <div class="avatar__popout avatar__popout--backlink">
+      Zurück zur Übersicht
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <article class="article">
+    <header class="article__header">
+      <a href="{{url}}" class="article__link">
+        <h1 class="article__title">
+          {{title}}
+        </h1>
+      </a>
+      <div class="article__meta">
+        <time
+          class="article__time"
+          pubdate datetime="{{date format="YYYY-MM-DD HH:MM:SS"}}"
+          title="{{date format="DD MMMM YYYY - HH:MM"}}"
+        >
+          {{date format="DD. MMMM YYYY - HH:MM"}} Uhr
+        </time>
+        <ul class="article__tag-list">
+          {{#foreach tags}}
+            <li class="article__tag">
+              <a
+                href="{{url}}"
+                title="{{name}}"
+                class="article__link article__link--tag article_link--tag-{{id}}">
+                {{name}}
+              </a>
+            </li>
+          {{/foreach}}
+        </ul>
+      </div>
+    </header>
+    <main class="article__content">
+      {{content}}
+    </main>
+  </article>
+</main>
+{{/post}}

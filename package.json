@@ -1,8 +1,8 @@
 
 {
-  "name": "quickstart",
+  "name": "dexite",
   "version": "1.0.0",
-  "description": "start a simple web-page with sass, fontawesome and normalize.css",
+  "description": "personal blog theme from Jan Hofmann",
   "author": "Jan Hofmann <jan.hofmann@dexite.de>",
   "license": "CC BY-NC-SA 3.0 DE",
   "devDependencies": {
